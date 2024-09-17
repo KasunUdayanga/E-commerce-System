@@ -1,1 +1,11 @@
-$(document).ready((function(){$("#rating").rating({size:"xs"})}));
+/******/ (() => { // webpackBootstrap
+/*!******************************************************************!*\
+  !*** ./platform/plugins/ecommerce/resources/assets/js/review.js ***!
+  \******************************************************************/
+$(document).ready(function () {
+  $('#rating').rating({
+    'size': 'xs'
+  });
+});
+/******/ })()
+;

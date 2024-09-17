@@ -1,1 +1,83 @@
-(()=>{function e(e,t){for(var a=0;a<t.length;a++){var i=t[a];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}var t=function(){function t(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t),this.template=$("#currency_template").html(),this.totalItem=0,this.deletedItems=[],this.initData(),this.handleForm()}var a,i;return a=t,(i=[{key:"initData",value:function(){var e=this,t=$.parseJSON($("#currencies").html());$.each(t,(function(t,a){var i=e.template.replace(/__id__/gi,a.id).replace(/__position__/gi,a.order).replace(/__isPrefixSymbolChecked__/gi,1==a.is_prefix_symbol?"selected":"").replace(/__notIsPrefixSymbolChecked__/gi,0==a.is_prefix_symbol?"selected":"").replace(/__isDefaultChecked__/gi,1==a.is_default?"checked":"").replace(/__title__/gi,a.title).replace(/__decimals__/gi,a.decimals).replace(/__exchangeRate__/gi,a.exchange_rate).replace(/__symbol__/gi,a.symbol);$(".swatches-container .swatches-list").append(i),e.totalItem++}))}},{key:"addNewAttribute",value:function(){var e=this,t=e.template.replace(/__id__/gi,0).replace(/__position__/gi,e.totalItem).replace(/__isPrefixSymbolChecked__/gi,"").replace(/__notIsPrefixSymbolChecked__/gi,"").replace(/__isDefaultChecked__/gi,0==e.totalItem?"checked":"").replace(/__title__/gi,"").replace(/__decimals__/gi,0).replace(/__exchangeRate__/gi,1).replace(/__symbol__/gi,"");$(".swatches-container .swatches-list").append(t),e.totalItem++}},{key:"exportData",value:function(){var e=[];return $(".swatches-container .swatches-list li").each((function(t,a){var i=$(a);e.push({id:i.data("id"),is_default:i.find("[data-type=is_default] input[type=radio]").is(":checked")?1:0,order:i.index(),title:i.find("[data-type=title] input").val(),symbol:i.find("[data-type=symbol] input").val(),decimals:i.find("[data-type=decimals] input").val(),exchange_rate:i.find("[data-type=exchange_rate] input").val(),is_prefix_symbol:i.find("[data-type=is_prefix_symbol] select").val()})})),e}},{key:"handleForm",value:function(){var e=this;$(".swatches-container .swatches-list").sortable(),$("body").on("submit",".main-setting-form",(function(){var t=e.exportData();$("#currencies").val(JSON.stringify(t)),$("#deleted_currencies").val(JSON.stringify(e.deletedItems))})).on("click",".js-add-new-attribute",(function(t){t.preventDefault(),e.addNewAttribute()})).on("click",".swatches-container .swatches-list li .remove-item a",(function(t){t.preventDefault();var a=$(t.currentTarget).closest("li");e.deletedItems.push(a.data("id")),a.remove()}))}}])&&e(a.prototype,i),t}();$(window).on("load",(function(){new t}))})();
+/******/ (() => { // webpackBootstrap
+/*!**********************************************************************!*\
+  !*** ./platform/plugins/ecommerce/resources/assets/js/currencies.js ***!
+  \**********************************************************************/
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var Currencies = /*#__PURE__*/function () {
+  function Currencies() {
+    _classCallCheck(this, Currencies);
+    this.template = $('#currency_template').html();
+    this.totalItem = 0;
+    this.deletedItems = [];
+    this.initData();
+    this.handleForm();
+  }
+  return _createClass(Currencies, [{
+    key: "initData",
+    value: function initData() {
+      var _self = this;
+      var data = $.parseJSON($('#currencies').html());
+      $.each(data, function (index, item) {
+        var template = _self.template.replace(/__id__/gi, item.id).replace(/__position__/gi, item.order).replace(/__isPrefixSymbolChecked__/gi, item.is_prefix_symbol == 1 ? 'selected' : '').replace(/__notIsPrefixSymbolChecked__/gi, item.is_prefix_symbol == 0 ? 'selected' : '').replace(/__isDefaultChecked__/gi, item.is_default == 1 ? 'checked' : '').replace(/__title__/gi, item.title).replace(/__decimals__/gi, item.decimals).replace(/__exchangeRate__/gi, item.exchange_rate).replace(/__symbol__/gi, item.symbol);
+        $('.swatches-container .swatches-list').append(template);
+        _self.totalItem++;
+      });
+    }
+  }, {
+    key: "addNewAttribute",
+    value: function addNewAttribute() {
+      var _self = this;
+      var template = _self.template.replace(/__id__/gi, 0).replace(/__position__/gi, _self.totalItem).replace(/__isPrefixSymbolChecked__/gi, '').replace(/__notIsPrefixSymbolChecked__/gi, '').replace(/__isDefaultChecked__/gi, _self.totalItem == 0 ? 'checked' : '').replace(/__title__/gi, '').replace(/__decimals__/gi, 0).replace(/__exchangeRate__/gi, 1).replace(/__symbol__/gi, '');
+      $('.swatches-container .swatches-list').append(template);
+      _self.totalItem++;
+    }
+  }, {
+    key: "exportData",
+    value: function exportData() {
+      var data = [];
+      $('.swatches-container .swatches-list li').each(function (index, item) {
+        var $current = $(item);
+        data.push({
+          id: $current.data('id'),
+          is_default: $current.find('[data-type=is_default] input[type=radio]').is(':checked') ? 1 : 0,
+          order: $current.index(),
+          title: $current.find('[data-type=title] input').val(),
+          symbol: $current.find('[data-type=symbol] input').val(),
+          decimals: $current.find('[data-type=decimals] input').val(),
+          exchange_rate: $current.find('[data-type=exchange_rate] input').val(),
+          is_prefix_symbol: $current.find('[data-type=is_prefix_symbol] select').val()
+        });
+      });
+      return data;
+    }
+  }, {
+    key: "handleForm",
+    value: function handleForm() {
+      var _self = this;
+      $('.swatches-container .swatches-list').sortable();
+      $('body').on('submit', '.main-setting-form', function () {
+        var data = _self.exportData();
+        $('#currencies').val(JSON.stringify(data));
+        $('#deleted_currencies').val(JSON.stringify(_self.deletedItems));
+      }).on('click', '.js-add-new-attribute', function (event) {
+        event.preventDefault();
+        _self.addNewAttribute();
+      }).on('click', '.swatches-container .swatches-list li .remove-item a', function (event) {
+        event.preventDefault();
+        var $item = $(event.currentTarget).closest('li');
+        _self.deletedItems.push($item.data('id'));
+        $item.remove();
+      });
+    }
+  }]);
+}();
+$(window).on('load', function () {
+  new Currencies();
+});
+/******/ })()
+;
