@@ -1,8 +1,8 @@
 @import url('font-inter.css');
 :root {
-  --primarycolor: #0A76D8;
+  --primarycolor: #1216f0af;
   --primarycolorhover: #006dd3;
-  --btnice:#D8EBFA;
+  --btnice:#ffffff;
   --btnnicetext:#1b62b3;
 }
 
@@ -121,17 +121,17 @@ body{
 
 .btn-primary-soft{
     background-color: #D8EBFA ;
-    /*border: 1px solid rgba(57,108,240,0.1) ;*/    color: #1969AA;
+     color: #1757e0;
     font-weight: 500;
     font-size: 16px;
     border: none;
-    /*box-shadow: 0 3px 5px 0 rgba(57,108,240,0.3)*/
+    box-shadow: 0 3px 5px 0 rgba(57,108,240,0.3)
 }
 
 
 .btn-primary-soft:hover{
     background-color: var(--primarycolor) ;
-    /*border: 1px solid rgba(57,108,240,0.1) ;*/
+    border: 1px solid rgba(57,108,240,0.1) ;
     color: #fff ;
     box-shadow: 0 3px 5px 0 rgba(57,108,240,0.3);
 }
@@ -251,7 +251,7 @@ body{
     max-height: 30%;
     overflow: auto;
   }
-  
+
   @media screen and (max-width: 700px){
     .box{
       width: 70%;
@@ -337,9 +337,10 @@ input[type=search]:focus {
 
 
 .menu-active{
-  color: var(--primarycolor);
-  border-right: 7px solid var(--primarycolor);
-  background-color: var();
+  color: rgb(7, 7, 236);
+  border-right: 7px solid white;
+  background-color: white;
+
 }
 
 .menu-btn:hover{
@@ -349,18 +350,19 @@ input[type=search]:focus {
 
 .non-style-link-menu:link, .non-style-link-menu:visited,  .non-style-link-menu:active{
   text-decoration: none;
-  color: #3b3b3b;
+  color: #000000;
 }
 .non-style-link-menu:hover{
   text-decoration: none;
   color: var(--primarycolor);
+  background-color: white;
 }
 
 .non-style-link-menu-active:link, .non-style-link-menu-active:visited,  .non-style-link-menu-active:active{
   text-decoration: none;
   color: var(--primarycolor);
-}
 
+}
 
 
 .menu-icon-dashbord{
@@ -491,8 +493,7 @@ input[type=search]:focus {
   border: 2px solid #c9cbce9f;
   border-radius: 7px;
   color: var(--primarycolor);
-  /*background-color: #d8ebfa25 ;*/
-  /*box-shadow: 0 3px 5px 0 rgba(95, 95, 97, 0.3);*/
+
 }
 
 

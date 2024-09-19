@@ -18,8 +18,7 @@
 <body>
 <?php
 
-//learn from w3schools.com
-//Unset all the server side variables
+
 
 session_start();
 
@@ -64,7 +63,7 @@ if($_POST){
             $database->query("insert into patient(pemail,pname,ppassword, paddress, pnic,pdob,ptel) values('$email','$name','$newpassword','$address','$nic','$dob','$tele');");
             $database->query("insert into webuser values('$email','p')");
 
-            //print_r("insert into patient values($pid,'$email','$fname','$lname','$newpassword','$address','$nic','$dob','$tele');");
+          
             $_SESSION["user"]=$email;
             $_SESSION["usertype"]="p";
             $_SESSION["username"]=$fname;
@@ -81,7 +80,7 @@ if($_POST){
 
     
 }else{
-    //header('location: signup.php');
+
     $error='<label for="promter" class="form-label"></label>';
 }
 

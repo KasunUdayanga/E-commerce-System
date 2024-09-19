@@ -2,14 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-
-
 }
 .menu{
-    border-right: 1.5px solid rgb(235, 235, 235);
+    border-right: 1.5px solid rgb(255, 255, 255);
     width: 21%;
     height: 100vh;
     box-shadow: 0 0px 0px 2px rgba(240, 240, 240, 0.3);
+    background: linear-gradient(90deg, rgba(145, 174, 202, 0.596) 0%, rgba(16, 85, 214, 0.952) 100%);
+
 }
 .dash-body{
     width: 79%;
@@ -18,13 +18,12 @@
 
 .menu-container{
     width: 100%;
-    border-spacing: 0;
-    
+    border-spacing: 1;
 }
 
 .profile-title{
     font-weight: 500;
-    color: #161c2d;
+    color: #ffffff;
     font-size: 22px;
     margin: 0;
     text-align: left;
@@ -33,7 +32,7 @@
 
 .profile-subtitle{
     font-weight: 300;
-    color: #8492a6;
+    color: #ffffff;
     font-size: 15px;
     margin: 0;
     text-align: left;
@@ -41,64 +40,20 @@
 }
 
 .logout-btn{
-    margin-top: 30px;
-    width: 85%;
+    margin-top: 10px;
+    width: 90%;
+    margin-bottom: -20px;
+    border-radius: 20px;
+    color: rgba(0, 0, 255, 0.719);
 }
 
 .profile-container{
     border-bottom: 1.5px solid rgb(235, 235, 235);
-    /*border-radius: 6px;*/
     padding-top: 18%;
     padding-bottom: 12%;
-    /*box-shadow: 0 0 3px rgba(52,58,64,0.08);*/
     text-align: center;
     
 }
-
-
-/*.menu-items1{
-    font-weight: 500;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    color: #161c2def;
-    
-}
-
-.menu-td1{
-    padding-right: 10px;
-}
-
-
-.menu-button:hover{
-    cursor: pointer;
-    background-color:var(--btnice);
-}
-
-.menu-active{
-    color:var(--btnnicetext);
-    
-}
-
-.menu-items1-active{
-    color:var(--btnnicetext);
-    background-image: url('../img/search.svg');
-    background-position: 10px 50%;
-    background-repeat: no-repeat;
-}
-
-
-
-*/
-
-
-
-
-
-
-
-
-
 
 .heading-main12{
     font-weight: 500;
@@ -125,7 +80,6 @@
     
     
 }
-
 .add-doc-form-container{
     padding: 25px;
     margin-top: 30px;

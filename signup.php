@@ -14,7 +14,7 @@
 <body>
 <?php
 
-//Unset all the server side variables
+
 
 session_start();
 
