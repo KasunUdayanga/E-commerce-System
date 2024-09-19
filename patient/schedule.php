@@ -21,7 +21,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -45,15 +45,14 @@
     $username=$userfetch["pname"];
 
 
-    //echo $userid;
-    //echo $username;
+
     
     date_default_timezone_set('Asia/Kolkata');
 
     $today = date('Y-m-d');
 
 
- //echo $userid;
+
  ?>
  <div class="container">
      <div class="menu">
@@ -283,30 +282,7 @@
 
                                     }
                                     echo "</tr>";
-                                    
-                                    
-                                    // echo '<tr>
-                                    //     <td> &nbsp;'.
-                                    //     substr($title,0,30)
-                                    //     .'</td>
-                                        
-                                    //     <td style="text-align:center;">
-                                    //         '.substr($scheduledate,0,10).' '.substr($scheduletime,0,5).'
-                                    //     </td>
-                                    //     <td style="text-align:center;">
-                                    //         '.$nop.'
-                                    //     </td>
 
-                                    //     <td>
-                                    //     <div style="display:flex;justify-content: center;">
-                                        
-                                    //     <a href="?action=view&id='.$scheduleid.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-view"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">View</font></button></a>
-                                    //    &nbsp;&nbsp;&nbsp;
-                                    //    <a href="?action=drop&id='.$scheduleid.'&name='.$title.'" class="non-style-link"><button  class="btn-primary-soft btn button-icon btn-delete"  style="padding-left: 40px;padding-top: 12px;padding-bottom: 12px;margin-top: 10px;"><font class="tn-in-text">Cancel Session</font></button></a>
-                                    //     </div>
-                                    //     </td>
-                                    // </tr>';
-                                    
                                 }
                             }
                                  

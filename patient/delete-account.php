@@ -30,7 +30,7 @@
         $email=($result001->fetch_assoc())["pemail"];
         $sql= $database->query("delete from webuser where email='$email';");
         $sql= $database->query("delete from patient where pemail='$email';");
-        //print_r($email);
+
         header("location: ../logout.php");
     }
 

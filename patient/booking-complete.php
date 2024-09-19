@@ -1,6 +1,6 @@
 <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -32,7 +32,7 @@
             $scheduleid=$_POST["scheduleid"];
             $sql2="insert into appointment(pid,apponum,scheduleid,appodate) values ($userid,$apponum,$scheduleid,'$date')";
             $result= $database->query($sql2);
-            //echo $apponom;
+    
             header("location: appointment.php?action=booking-added&id=".$apponum."&titleget=none");
 
         }

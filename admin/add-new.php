@@ -18,7 +18,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -39,7 +39,7 @@
 
 
     if($_POST){
-        //print_r($_POST);
+
         $result= $database->query("select * from webuser");
         $name=$_POST['name'];
         $nic=$_POST['nic'];
@@ -61,8 +61,7 @@
                 $database->query($sql1);
                 $database->query($sql2);
 
-                //echo $sql1;
-                //echo $sql2;
+     
                 $error= '4';
                 
             }
@@ -75,7 +74,7 @@
         
         
     }else{
-        //header('location: signup.php');
+
         $error='3';
     }
     

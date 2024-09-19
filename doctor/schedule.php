@@ -21,7 +21,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -44,7 +44,7 @@
     $userfetch=$userrow->fetch_assoc();
     $userid= $userfetch["docid"];
     $username=$userfetch["docname"];
- //echo $userid;
+
  ?>
  <div class="container">
      <div class="menu">
@@ -176,7 +176,7 @@
 
                 $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid where doctor.docid=$userid ";
                     if($_POST){
-                        //print_r($_POST);
+
                         $sqlpt1="";
                         if(!empty($_POST["sheduledate"])){
                             $sheduledate=$_POST["sheduledate"];

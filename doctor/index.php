@@ -29,7 +29,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -53,8 +53,6 @@
     $username=$userfetch["docname"];
 
 
-    //echo $userid;
-    //echo $username;
     
     ?>
     <div class="container">

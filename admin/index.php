@@ -26,7 +26,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -40,7 +40,7 @@
     }
     
 
-    //import database
+
     include("../connection.php");
 
     

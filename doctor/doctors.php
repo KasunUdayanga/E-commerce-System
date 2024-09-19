@@ -21,13 +21,13 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
     if(isset($_SESSION["user"])){
         if(($_SESSION["user"])=="" or $_SESSION['usertype']!='a'){
-            //header("location: ../login.php");
+
         }else{
             $useremail=$_SESSION["user"];
         }
@@ -38,7 +38,7 @@
     
     
 
-    //import database
+
     include("../connection.php");
 
     

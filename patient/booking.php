@@ -21,7 +21,7 @@
 <body>
     <?php
 
-    //learn from w3schools.com
+
 
     session_start();
 
@@ -45,8 +45,7 @@
     $username=$userfetch["pname"];
 
 
-    //echo $userid;
-    //echo $username;
+
     
 
 
@@ -55,7 +54,7 @@
     $today = date('Y-m-d');
 
 
- //echo $userid;
+
  ?>
  <div class="container">
      <div class="menu">
