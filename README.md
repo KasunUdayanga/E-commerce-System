@@ -69,7 +69,7 @@ If you are Admin,doctor or patient ,only have one page to login :)
 
 
 
-DATABASE NAME: 'edoc'
+DATABASE NAME: 'doctor'
 
 # BUILDIN USER ACCOUNTS OF THIS PROJECT
 
