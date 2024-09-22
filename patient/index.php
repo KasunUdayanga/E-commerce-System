@@ -95,7 +95,7 @@
     ?>
 
     <div class="container-fluid p-0">
-        <?php include("../Doctor/navbar.php"); ?>
+        <?php include("Patient_navbar.php"); ?>
 
         <div class="dashboard-section">
             <div class="welcome-section">
@@ -108,9 +108,9 @@
                 </p>
 
                 <!-- Add this code where you want the search functionality -->
-<div class="search-container" style="margin-top: 20px;">
+                <div class="search-container" style="margin-top: 20px;">
     <form action="schedule.php" method="post" style="display: flex;">
-        <input type="search" name="search" class="input-text" placeholder="Search Doctor" list="doctors" style="width: 70%;">
+        <input type="search" name="search" class="form-control me-2" placeholder="Search Doctor" list="doctors" style="width: 70%;">
         <datalist id="doctors">
             <?php
                 $list11 = $database->query("SELECT docname, docemail FROM doctor;");
@@ -120,9 +120,10 @@
                 }
             ?>
         </datalist>
-        <input type="submit" value="Search" class="login-btn btn-primary btn" style="padding: 10px 20px;">
+        <input type="submit" value="Search" class="btn btn-primary" style="padding: 10px 20px; margin-left: 10px;">
     </form>
 </div>
+
 
             </div>
 
