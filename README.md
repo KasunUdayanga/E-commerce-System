@@ -1,52 +1,66 @@
 # edoc-echanneling
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(1).png)
+![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Screenshot%20(1).png)
 
-Simple web project that made for e-channeling.
-This project helps a certain medical establishment such as a clinic or a hospital clients/patients to request an appointment with a doctor online. This project can also help doctors to manage the schedules of their appointments with their patients. This doctor's appointment system will organize the schedules of each patient's appointment, which will be submitted as a request to the doctor they have selected. The system has 3 sides which are the administrator, the doctor, and the patient. The system admin will populate the list of the doctors with their specialties and along with the doctor's details and system credentials. The patients will browse the doctor's appointment system website to find a doctor that has the specialty of their needs. The patient can check the doctor's weekly schedule to help them to choose the day and time which they can comply for the appointment and they will submit their request for an appointment. After that, the doctors can view all their appointments and the appointment request of the patients for their availability.
+This web project is designed for e-channeling, allowing medical establishments like clinics or hospitals to facilitate online appointment requests for their clients or patients. The system is divided into three roles: administrator, doctor, and patient. The administrator manages the list of doctors, including their specialties, details, and system credentials. Patients can browse the doctor appointment system, search for doctors based on their medical needs, and view the doctors' weekly schedules to select a suitable time for their appointment. Once a request is submitted, doctors can review all their scheduled appointments and check patient requests to confirm their availability.
 
-  1.Admin
-  
-  
-    Admin can add doctors,edit doctors, delete doctors;
-    
-    Schedule new doctors sessions,remove sessions;
-    
-    View patients details;
-    
-    View booking of patients;
+# Admin Panel Features
+
+## 1. Manage Doctors
+- **Add Doctor:** Admin can add new doctors to the system.
+- **Edit Doctor:** Admin can update the details of any existing doctor.
+- **Delete Doctor:** Admin can remove a doctor from the system.
+
+## 2. Manage Doctor Sessions
+- **Schedule Sessions:** Admin can schedule new sessions for doctors.
+- **Remove Sessions:** Admin can cancel or delete previously scheduled sessions.
+
+## 3. View Patient Information
+- **Patient Profiles:** Admin has access to view detailed profiles of all patients.
+
+## 4. Manage Patient Bookings
+- **View Bookings:** Admin can see the booking details of patients, including session times and doctor assigned.
+
     
     
 ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)
     
  
  
-  2.Doctors
-  
-  
-    View their Appointment;
-    
-    view their scheduled sessions;
-    
-    view details of patients;
-    
-    delete account;
-    
-    edit account settings;
+# Doctor Features
+
+## 1. View Appointments
+- **Appointment List:** Doctors can view the details of their scheduled appointments.
+
+## 2. View Scheduled Sessions
+- **Session Overview:** Doctors can access a list of all their upcoming scheduled sessions.
+
+## 3. View Patient Details
+- **Patient Information:** Doctors can view the detailed profiles of patients they are attending.
+
+## 4. Delete Account
+- **Account Deletion:** Doctors have the ability to delete their account from the system.
+
+## 5. Edit Account Settings
+- **Account Settings:** Doctors can modify their personal information and account settings.
     
 ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(9).png)
     
-  3.Patiens(Clients)
-  
-  
-    make appointment online;
-    
-    create accounts themslves;
-    
-    view their old booking;
-    
-    delete account;
-    
-    edit account settings;
+# Patient (Client) Features
+
+## 1. Make Appointments
+- **Online Booking:** Patients can make appointments with available doctors online.
+
+## 2. Create Accounts
+- **Self-Registration:** Patients can create their own accounts and manage their profiles.
+
+## 3. View Booking History
+- **Booking Overview:** Patients can view their past appointment bookings and related details.
+
+## 4. Delete Account
+- **Account Deletion:** Patients have the option to delete their account from the system.
+
+## 5. Edit Account Settings
+- **Account Settings:** Patients can modify their personal information and account preferences.
     
     
 ![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)  
@@ -70,7 +84,7 @@ If you are Admin,doctor or patient ,only have one page to login :)
 
 
 
-DATABASE NAME: 'edoc'
+DATABASE NAME: 'doctor'
 
 # BUILDIN USER ACCOUNTS OF THIS PROJECT
 
