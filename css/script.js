@@ -5,7 +5,7 @@ function closeNavbar() {
     }
 }
 
-  // Detect the collapse and show events for the navbar
+  Detect the collapse and show events for the navbar
   const navbarCollapse = document.getElementById('navbarNav');
   const content = document.querySelector('.dashboard-section'); // Your main content
 
@@ -19,21 +19,19 @@ function closeNavbar() {
   });
 
 
-//   <script>
-//   const navbarCollapse = document.getElementById('navbarNav');
-//   const content = document.querySelector('.dashboard-section');
+  const navbarCollapse = document.getElementById('navbarNav');
+  const content = document.querySelector('.dashboard-section');
 
-//   function adjustContentMargin() {
-//       if (window.innerWidth < 768 && navbarCollapse.classList.contains('show')) {
-//           content.style.marginTop = navbarCollapse.clientHeight + 'px';
-//       } else {
-//           content.style.marginTop = '0';
-//       }
-//   }
+  function adjustContentMargin() {
+      if (window.innerWidth < 768 && navbarCollapse.classList.contains('show')) {
+          content.style.marginTop = navbarCollapse.clientHeight + 'px';
+      } else {
+          content.style.marginTop = '0';
+      }
+  }
 
-//   document.querySelector('.navbar-toggler').addEventListener('click', function () {
-//       setTimeout(adjustContentMargin, 300);
-//   });
+  document.querySelector('.navbar-toggler').addEventListener('click', function () {
+      setTimeout(adjustContentMargin, 300);
+  });
 
-//   window.addEventListener('resize', adjustContentMargin);
-// </script>
+  window.addEventListener('resize', adjustContentMargin);
