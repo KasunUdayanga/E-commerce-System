@@ -197,7 +197,7 @@
                 
                 <?php
                     if($_POST){
-                        //print_r($_POST);
+                       
                         $sqlpt1="";
                         if(!empty($_POST["sheduledate"])){
                             $sheduledate=$_POST["sheduledate"];
@@ -210,8 +210,7 @@
                             $docid=$_POST["docid"];
                             $sqlpt2=" doctor.docid=$docid ";
                         }
-                        //echo $sqlpt2;
-                        //echo $sqlpt1;
+                    
                         $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid ";
                         $sqllist=array($sqlpt1,$sqlpt2);
                         $sqlkeywords=array(" where "," and ");
@@ -223,11 +222,10 @@
                                 $key2++;
                             };
                         };
-                        //echo $sqlmain;
-
                         
                         
-                        //
+                        
+                        
                     }else{
                         $sqlmain= "select schedule.scheduleid,schedule.title,doctor.docname,schedule.scheduledate,schedule.scheduletime,schedule.nop from schedule inner join doctor on schedule.docid=doctor.docid  order by schedule.scheduledate desc";
 
