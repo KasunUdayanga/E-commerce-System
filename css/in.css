@@ -181,7 +181,7 @@ body {
     top: 0;
     border-radius: 10px;
   }
-/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
     .heading-text {
         font-size: 32px;
