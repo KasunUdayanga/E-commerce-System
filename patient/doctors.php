@@ -71,7 +71,7 @@
                         echo "<option value='$d'>";
                         echo "<option value='$c'>";
                     }
-                ?>
+                    ?>
             </datalist>
             <input type="submit" value="Search" class="login-btn btn-primary btn ms-2" style="padding: 10px 25px;">
         </form>
