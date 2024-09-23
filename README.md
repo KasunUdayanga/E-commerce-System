@@ -22,7 +22,7 @@ This web project is designed for e-channeling, allowing medical establishments l
 
     
     
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(3).png)
+![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Admin_dashboard.png)
     
  
  
@@ -43,7 +43,7 @@ This web project is designed for e-channeling, allowing medical establishments l
 ## 5. Edit Account Settings
 - **Account Settings:** Doctors can modify their personal information and account settings.
     
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(9).png)
+![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Doctor_dashboard.png)
     
 # Patient (Client) Features
 
@@ -63,7 +63,7 @@ This web project is designed for e-channeling, allowing medical establishments l
 - **Account Settings:** Patients can modify their personal information and account preferences.
     
     
-![](https://github.com/hshnudr/edoc-echanneling/blob/main/Screenshots/Screenshot%20(6).png)  
+![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Patient_dashboard.png)  
     
 If you are Admin,doctor or patient ,only have one page to login :)
 
