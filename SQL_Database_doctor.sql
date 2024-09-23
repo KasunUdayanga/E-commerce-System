@@ -228,7 +228,6 @@ CREATE TABLE IF NOT EXISTS `webuser` (
 INSERT INTO `webuser` (`email`, `usertype`) VALUES
 ('admin@edoc.com', 'a'),
 ('doctor@edoc.com', 'd'),
-('patient@edoc.com', 'p'),
-('emhashenudara@gmail.com', 'p');
+('patient@edoc.com', 'p');
 COMMIT;
 
