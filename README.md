@@ -1,4 +1,4 @@
-# edoc-echanneling
+# 11-channeling
 ![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Screenshot%20(1).png)
 
 This web project is designed for e-channeling, allowing medical establishments like clinics or hospitals to facilitate online appointment requests for their clients or patients. The system is divided into three roles: administrator, doctor, and patient. The administrator manages the list of doctors, including their specialties, details, and system credentials. Patients can browse the doctor appointment system, search for doctors based on their medical needs, and view the doctors' weekly schedules to select a suitable time for their appointment. Once a request is submitted, doctors can review all their scheduled appointments and check patient requests to confirm their availability.
