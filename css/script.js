@@ -5,7 +5,6 @@ function closeNavbar() {
     }
 }
 
-  Detect the collapse and show events for the navbar
   const navbarCollapse = document.getElementById('navbarNav');
   const content = document.querySelector('.dashboard-section'); // Your main content
 
