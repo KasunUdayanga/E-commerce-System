@@ -60,25 +60,18 @@
         <?php include("navbar.php")  ?>
         <div class="dash-body" style="margin-top: 15px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;" >
-                        
                         <tr >
-                            
                         <td width="13%" >
                     <a href="settings.php" ><button  class="login-btn btn-primary-soft btn btn-icon-back"  style="padding-top:11px;padding-bottom:11px;margin-left:20px;width:125px"><font class="tn-in-text">Back</font></button></a>
                     </td>
                     <td>
                         <p style="font-size: 23px;padding-left:12px;font-weight: 600;">Settings</p>
-                                           
+
                     </td>
-                    
-                          
-                           
-        
-        
                         </tr>
                 <tr>
                     <td colspan="4">
-                        
+
                         <center>
                         <table class="filter-container" style="border: none;" border="0">
                             <tr>
@@ -100,12 +93,10 @@
                                                     Edit your Account Details & Change Password
                                                 </div>
                                         </div>
-                                                
+
                                     </div>
                                     </a>
                                 </td>
-                                
-                                
                             </tr>
                             <tr>
                                 <td colspan="4">
@@ -120,17 +111,15 @@
                                         <div>
                                                 <div class="h1-dashboard" >
                                                     View Account Details
-                                                    
+
                                                 </div><br>
                                                 <div class="h3-dashboard"  style="font-size: 15px;">
                                                     View Personal information About Your Account
                                                 </div>
                                         </div>
-                                                
                                     </div>
                                     </a>
                                 </td>
-                                
                             </tr>
                             <tr>
                                 <td colspan="4">
@@ -145,29 +134,24 @@
                                         <div>
                                                 <div class="h1-dashboard" style="color: #ff5050;">
                                                     Delete Account
-                                                    
                                                 </div><br>
                                                 <div class="h3-dashboard"  style="font-size: 15px;">
                                                     Will Permanently Remove your Account
                                                 </div>
                                         </div>
-                                                
                                     </div>
                                     </a>
                                 </td>
-                                
                             </tr>
                         </table>
                     </center>
                     </td>
                 </tr>
-            
             </table>
         </div>
     </div>
     <?php 
     if($_GET){
-        
         $id=$_GET["id"];
         $action=$_GET["action"];
         if($action=='drop'){
@@ -180,7 +164,6 @@
                         <a class="close" href="settings.php">&times;</a>
                         <div class="content">
                             You want to delete this record<br>('.substr($nameget,0,40).').
-                            
                         </div>
                         <div style="display: flex;justify-content: center;">
                         <a href="delete-doctor.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
