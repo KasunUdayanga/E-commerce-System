@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Single Bootstrap CSS Link -->
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="../css/animations.css">  
@@ -250,7 +250,6 @@
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
                             You want to delete this record<br>('.substr($nameget,0,40).').
-                            
                         </div>
                         <div style="display: flex;justify-content: center;">
                         <a href="delete-doctor.php?id='.$id.'" class="non-style-link"><button  class="btn-primary btn"  style="display: flex;justify-content: center;align-items: center;margin:10px;padding:10px;"<font class="tn-in-text">&nbsp;Yes&nbsp;</font></button></a>&nbsp;&nbsp;&nbsp;
@@ -281,8 +280,8 @@
                         <h2></h2>
                         <a class="close" href="doctors.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
-                            
+                            11 channeling Web App<br>
+
                         </div>
                         <div style="display: flex;justify-content: center;">
                         <table width="80%" class="sub-table scrolldown add-doc-form-container" border="0">
@@ -715,7 +714,7 @@
 </div>
 
 <script src="script.js"></script>
-    <!-- Bootstrap JS CDN -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">                                    
 

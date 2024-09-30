@@ -21,16 +21,16 @@ session_start();
 
 if(isset($_SESSION["user"])) {
     if($_SESSION["user"] == "" || $_SESSION['usertype'] != 'a') {
-        header("location: ../login.php"); // Redirect to login page if user is not authenticated or not an admin
+        header("location: ../login.php"); 
     }
 } else {
-    header("location: ../login.php"); // Redirect to login page if no session exists
+    header("location: ../login.php"); 
 }
 
-// Import database connection
+
 include("../connection.php");
 
-if($_POST) { // If the form is submitted
+if($_POST) { 
     $result = $database->query("select * from webuser");
     $name = $_POST['name'];
     $nic = $_POST['nic'];
@@ -40,30 +40,30 @@ if($_POST) { // If the form is submitted
     $password = $_POST['password'];
     $cpassword = $_POST['cpassword'];
     
-    // Check if the passwords match
+
     if ($password == $cpassword) {
-        $error = '3'; // Default error code if email already exists
+        $error = '3'; 
         $result = $database->query("select * from webuser where email='$email';");
         
-        // If email is already in use, set error to 1
+     
         if ($result->num_rows == 1) {
             $error = '1';
         } else {
-            // Insert doctor information and user role into the database
+
             $sql1 = "insert into doctor(docemail,docname,docpassword,docnic,doctel,specialties) values('$email','$name','$password','$nic','$tele',$spec);";
             $sql2 = "insert into webuser values('$email','d')";
-            $database->query($sql1); // Insert doctor record
-            $database->query($sql2); // Insert webuser record
-            $error = '4'; // Successfully added doctor
+            $database->query($sql1); 
+            $database->query($sql2); 
+            $error = '4'; 
         }
     } else {
-        $error = '2'; // Error code 2: passwords do not match
+        $error = '2'; 
     }
 } else {
-    $error = '3'; // Default error if POST data is not received
+    $error = '3';
 }
 
-// Redirect to doctors.php with the error code
+
 header("location: doctors.php?action=add&error=".$error);
 ?>
 
