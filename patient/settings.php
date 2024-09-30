@@ -192,7 +192,7 @@
                         <h2></h2>
                         <a class="close" href="settings.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            11 Channelling <br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
